@@ -41,7 +41,6 @@ public class MainFrame extends JFrame {
         add(cardPanel);
 
         // ===== 画面遷移イベント =====
-
         // ▶ Person → Task
         personInputPanel.getNextButton().addActionListener(e -> {
             if (personInputPanel.getParticipants().isEmpty()) {
