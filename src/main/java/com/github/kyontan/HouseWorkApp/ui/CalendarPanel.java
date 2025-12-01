@@ -117,9 +117,10 @@ public class CalendarPanel extends JPanel {
     }
 
     //⭐----- ResultPanel → カレンダー遷移時に割り当て生成 -------⭐
-    public void updateCalendar(List<String> persons, List<String> tasks) {
+    public void updateCalendar(List<String> persons, List<String> tasks, List<ScheduleItem> scheduleItems) {
         this.persons = persons;
         this.tasks = tasks;
+        this.scheduleItems = scheduleItems;
 
         generateSchedule(); // ← 🔥 新しく追加！
 
