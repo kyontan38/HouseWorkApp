@@ -82,8 +82,8 @@ public class MainFrame extends JFrame {
             //カレンダーへデータ反映
             calendarPanel.updateCalendar(
                     personInputPanel.getParticipants(),
-                    taskInputPanel.getTasks(),
-                    resultPanel.getScheduleItems()
+                    taskInputPanel.getTasks()
+                    // resultPanel.getScheduleItems()
             );
 
             cardLayout.show(cardPanel, "Calendar");
