@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 import com.github.kyontan.HouseWorkApp.model.ScheduleItem;
 
@@ -121,8 +120,6 @@ public class CalendarPanel extends JPanel {
         this.persons = persons;
         this.tasks = tasks;
         this.scheduleItems = scheduleItems;
-
-        generateSchedule(); // ← 🔥 新しく追加！
 
         refreshTable();
     }
